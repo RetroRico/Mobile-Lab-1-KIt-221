@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/main">
+
+    <activity
+        android:id="@+id/main"
+        android:name="com.example.lab1.activities.Main"
+        android:label="Main" />
+        <action
+            android:id="@+id/action_main_to_doxid"
+            app:destination="@id/doxid"/>
+    <activity
+        android:id="@+id/doxid"
+        android:name="com.example.lab1.activities.Doxid"
+        android:label="Doxid" />
+        <action
+            android:id="@+id/action_doxid_to_valuts"
+            app:destination="@id/valuts"/>
+    <activity
+        android:id="@+id/valuts"
+        android:name="com.example.lab1.activities.Valuts"
+        android:label="Valuts" />
+        <action
+            android:id="@+id/action_valuts_to_result"
+            app:destination="@id/result"/>
+    <activity
+        android:id="@+id/result"
+        android:name="com.example.lab1.activities.Result"
+        android:label="Result" />
+        <action
+            android:id="@+id/action_back_to_main"
+            app:destination="@id/main"/>
+</navigation>
